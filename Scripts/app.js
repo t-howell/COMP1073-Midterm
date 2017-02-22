@@ -10,7 +10,7 @@ var travelReport = (function () {
 "use strict";
 console.log("App Started...")
 
-//Injecting text content
+// -------------Injecting text content----------------
 
 //Intro
 let IntroParagraph = document.getElementById("IntroParagraph");
@@ -101,6 +101,26 @@ let GavdosText = "Near the more well-known Crete, Gavdos is the most southern is
 
 Gavdos.textContent = GavdosText;
 
+// ----------------Collecting User Inputs From Form -----------------------
+
+//Setting up variables for form inputs
+let firstName = document.getElementById("firstName");
+let lastName = document.getElementById("lastName");
+let email = document.getElementById("email");
+let comments = document.getElementById("comments");
+let submitButton = document.getElementById("submitButton");
+
+//Prevent page from refreshing/losing input data
+submitButton.addEventListener("click", function(event) {
+	event.preventDefault();
+
+//Printing user inputs to console	
+console.log(firstName.value);
+console.log(lastName.value);
+console.log(email.value);
+console.log(comments.value);
+
+});
 
 })();
 
