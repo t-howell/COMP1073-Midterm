@@ -1,7 +1,6 @@
 /* app.js
 Tamara Howell - 200316347
 http://comp1073-midterm-200316347.azurewebsites.net/
-
 Midterm comp1073*/
 
 // setup your IIFE (Immediately Invoked Function Expression)
